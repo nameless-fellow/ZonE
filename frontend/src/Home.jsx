@@ -46,7 +46,7 @@ function Home() {
 
       <header className="mb-20 header-title">
         <h1 className="mt-15 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 text-center drop-shadow-lg">
-          ✨ Ziro
+          ✨ ZonE
         </h1>
       </header>
       <div className='flex gap-8 items-center justify-between'>

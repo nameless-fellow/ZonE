@@ -1,10 +1,10 @@
-# Ziro - Real-Time Chat Application
+# ZonE - Real-Time Chat Application
 
 A modern web-based chat application that enables users to create temporary private chat servers and communicate with others in real-time. The application supports multiple concurrent users with a maximum capacity of 5 clients per server.
 
 ## 🎯 Project Overview
 
-Ziro is a full-stack chat application built with modern web technologies, featuring:
+ZonE is a full-stack chat application built with modern web technologies, featuring:
 
 - **User Authentication**: Secure login and signup system
 - **Dynamic Chat Servers**: Users can create temporary private chat rooms

@@ -1,0 +1,155 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes expandBox {
+  from {
+    max-height: 600px;
+    opacity: 1;
+  }
+  to {
+    max-height: 800px;
+    opacity: 1;
+  }
+}
+
+@keyframes collapseBox {
+  from {
+    max-height: 800px;
+    opacity: 1;
+  }
+  to {
+    max-height: 600px;
+    opacity: 1;
+  }
+}
+
+@keyframes fieldSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fieldSlideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+}
+
+#fname {
+    font-family: "Londrina Sketch", cursive;
+}
+#lname {
+    font-family: "Londrina Sketch", cursive;
+}
+
+.form-container {
+  animation: slideInUp 0.6s ease-out;
+  max-height: 750px;
+  overflow: hidden;
+}
+
+.form-container.expanded {
+  animation: expandBox 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  max-height: 800px;
+}
+
+.form-container.collapsed {
+  animation: collapseBox 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  max-height: 500px;
+}
+
+.form-field {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.form-field.field-enter {
+  animation: fieldSlideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.form-field.field-exit {
+  animation: fieldSlideOut 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.toggle-switch {
+  animation: fadeIn 0.3s ease-out;
+  animation-fill-mode: both;
+}
+
+.toggle-switch-btn {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.toggle-switch-btn.active {
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.5), inset 0 0 10px rgba(34, 211, 238, 0.3);
+}
+
+.toggle-switch-btn.inactive {
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.3);
+}
+
+.header-title {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+/* Override browser autofill styles */  
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px slate-700 inset !important;
+  box-shadow: 0 0 0 30px rgb(51, 65, 85) inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
+
+input::placeholder {
+  color: rgb(168, 85, 247, 0.6) !important;
+}
+
+input:focus::placeholder {
+  color: transparent !important;
+}

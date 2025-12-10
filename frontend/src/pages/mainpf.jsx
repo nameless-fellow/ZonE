@@ -13,7 +13,7 @@ const ProfileCard = memo(function ProfileCard() {
     <div className="profile-box w-1/4 bg-gradient-to-br from-purple-900/40 via-slate-900/60 to-slate-950 rounded-2xl shadow-2xl border border-purple-500/40 backdrop-blur-xl p-8 overflow-y-auto max-h-screen">
       <div className="profile-header mb-8">
         <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400" id='hello'>
-          Welcome to your <br /><span className='text-cyan-400 mt-2'>Profile</span> NIGGA
+          Welcome to your <span className='block text-cyan-400 mt-2'>Profile</span>
         </h2>
       </div>
 
@@ -56,7 +56,7 @@ const ChatHeader = () => (
   <div className="chat-header bg-gradient-to-r from-purple-900/40 via-slate-900/60 to-slate-950 rounded-2xl shadow-xl border border-purple-500/40 backdrop-blur-xl p-6">
     <div className='flex items-center justify-between'>
       <div>
-        <h2 className="text-3xl font-bold text-white">Yolo Chat</h2>
+        <h2 className="text-3xl font-bold text-white">Ziro Chat</h2>
         <p className="text-purple-300 text-sm mt-1">👥 5 members online</p>
       </div>
       <div className='flex gap-3'>
